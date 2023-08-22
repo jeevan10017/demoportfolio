@@ -1,0 +1,147 @@
+.about {
+  padding: 50px 0;
+  background: rgba(0, 0, 0, 0.5)  url(https://media.istockphoto.com/id/1264156957/photo/young-man-in-the-city-reaching-his-goals.jpg?s=612x612&w=0&k=20&c=-xtXMjc8CecrJWLkETw6yk6-yVhswh7w1_uh5ele820=);
+  background-size: cover;
+  padding: 50px 0;
+    background-position: center;
+    overflow: hidden;
+    color: #f3efef;
+     background-color: rgba(237, 233, 233, 0.5); 
+}
+
+ .about .container{
+  
+  background-color: rgba(52, 49, 49, 0.7); 
+  border-radius: 10px;
+  
+} 
+
+.container {
+  max-width: 1200px;
+  min-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+h2 {
+  font-size: 2px;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease-in-out;
+  font-family: 'Play', sans-serif;
+  font-family: 'Comfortaa', cursive;
+}
+
+p {
+  font-size: 24px;
+  margin-bottom: 50px;
+  animation: fadeInUp 1s ease-in-out;
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 18px;
+  /* font-family: 'Comfortaa', cursive; */
+}
+
+.accordion-container {
+  display: grid;
+  gap: 20px;
+  animation: fadeInUp 1s ease-in-out;
+  margin-left: 10.5rem;
+  margin-right: 3.5rem;
+  font-size: 19px;
+
+}
+
+.accordion {
+  background-color: #373738;
+  background-color: rgba(92, 92, 3, 0.4);
+  border-radius: 5px;
+  overflow:visible;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  transition: max-height 0.3s ease-in-out;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.accordion-toggle {
+  background-color:  rgba(16, 16, 16, 0.6);
+  color:rgb(253, 249, 249);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.accordion-toggle:hover {
+  background-color:rgba(16, 16, 16, 0.8);
+  /* color: rgba(10, 10, 10,0.7); */
+}
+
+.accordion-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion.open .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  padding: 0.1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding: auto;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Comfortaa', cursive;
+}
+
+.accordion.open .accordion-content {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in-out;
+}
+.image-container {
+  margin-bottom: 30px;
+  /* margin-top: 30px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.image-container img {
+  max-width: 100%;
+  height: 18rem;
+  border-radius: 50%;
+  box-shadow: 0px 10px 20px 2px black;
+  cursor: pointer;
+ 
+}
+.image-container img:hover {
+  transition: transform 10s ease-in-out;
+  transform: scale(1.1);
+}
+.secondp{
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+@media (max-width: 522px){
+  .about{
+    min-width: 100vh;
+  }
+  .accordion-icon {
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+}
