@@ -69,6 +69,11 @@
 .profile-photo:hover img {
   transform: scale(1.04);
 }
+.heading em{
+  color: rgb(238, 90, 90);
+  text-shadow: 1px 1px 3px black;
+  font-size: larger;
+}
 
 @keyframes fadeInUp {
   from {

@@ -144,4 +144,39 @@ p {
     font-size: 20px;
     transition: transform 0.3s ease-in-out;
   }
+}/* Additions and modifications for modern and professional styling */
+.about {
+  padding: 50px 0;
+  background: url(https://media.istockphoto.com/id/1264156957/photo/young-man-in-the-city-reaching-his-goals.jpg?s=612x612&w=0&k=20&c=-xtXMjc8CecrJWLkETw6yk6-yVhswh7w1_uh5ele820=) center/cover;
+  overflow: hidden;
+  color: #f3efef;
+  background-color: rgba(237, 233, 233, 0.5);
 }
+
+.about .container {
+  background-color: rgba(52, 49, 49, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Play', sans-serif;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.accordion-container {
+  display: grid;
+  gap: 20px;
+  margin-left: 10.5rem;
+  margin-right: 3.5rem;
+  font-size: 1.2rem;
+}
+
+/* Rest of your CSS remains unchanged */

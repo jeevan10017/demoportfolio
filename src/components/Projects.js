@@ -6,20 +6,38 @@ import './Projects.css';
 const projects = [
   {
     title: 'Random Quote Generator',
-    description: 'it generates a random quotes with their authors by just clicking a button ',
-    imageUrl:project1Image,
-          
+    description: 'Generates random quotes with authors by clicking a button.',
+    imageUrl: project1Image,
     link: 'https://github.com/jeevan10017/Random_Quote_generator',
+    technologies: ['HTML', 'CSS'],
+    tags: ['React', 'Responsive Design'],
   },
   {
     title: 'Portfolio',
-    description: 'Its just a demo portfolio of me',
-    imageUrl:project2Image,
-    link: '/',
+    description: 'Demo portfolio showcasing projects and skills.',
+    imageUrl: project2Image,
+    link: 'https://scintillating-swan-ff8c0d.netlify.app/',
+    technologies: ['React', 'CSS', 'HTML','JavaScript'],
+    tags: ['Web Development', 'Responsive Design'],
   },
-  
-  
 ];
+
+const ProjectCard = ({ project }) => (
+  <div className="portfolio-card">
+    <img src={project.imageUrl} alt={project.title} />
+    <h3>{project.title}</h3>
+    <p>{project.description}</p>
+    <div className="technologies">
+      <strong>Technologies:</strong> {project.technologies.join(', ')}
+    </div>
+    <div className="tags">
+      <strong>Tags:</strong> {project.tags.join(', ')}
+    </div>
+    <a href={project.link} target="_blank" rel="noopener noreferrer">
+      View
+    </a>
+  </div>
+);
 
 const Projects = () => {
   return (
@@ -28,14 +46,7 @@ const Projects = () => {
         <h2>Projects</h2>
         <div className="portfolio-grid">
           {projects.map((project, index) => (
-            <div className="portfolio-card" key={index}>
-              <img src={project.imageUrl} alt={project.title} />
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                View
-              </a>
-            </div>
+            <ProjectCard key={index} project={project} />
           ))}
         </div>
       </div>
